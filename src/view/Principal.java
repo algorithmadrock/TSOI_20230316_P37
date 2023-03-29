@@ -6,7 +6,7 @@ DATA        : 29/03/2023
 
 package view;
 
-import controller.TC;
+import controller.Carro;
 
 public class Principal {
 	public static void main(String[] args) {	
@@ -14,7 +14,7 @@ public class Principal {
 		String[] sentidos = {"norte", "sul", "leste", "oeste"};
 		
 		for (int i = 0; i<4; i++) {		
-			Thread thread = new TC(sentidos[i]);
+			Thread thread = new Carro(sentidos[i]);
 			
 			thread.start();
 		}

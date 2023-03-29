@@ -9,12 +9,12 @@ package controller;
 import java.util.concurrent.Semaphore;
 
 //TC = Thread Carro
-public class TC extends Thread {
+public class Carro extends Thread {
 	
 	private String sentido;
 	private Semaphore semaforo = new Semaphore(1);
 	
-	public TC(String sentido) {
+	public Carro(String sentido) {
 		this.sentido = sentido;
 		
 	}
