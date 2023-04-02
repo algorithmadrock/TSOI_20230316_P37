@@ -34,7 +34,7 @@ public class Carro extends Thread {
 	private void cruzamento() {
 		try {
 //			simulando a passagem do carro, bem rapidinho
-			sleep(10);
+			sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
